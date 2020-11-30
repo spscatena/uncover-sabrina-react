@@ -2,10 +2,18 @@
 
 .whiteSquare {
   background-color: white;
+  border:blueviolet 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blackSquare {
   background-color: black;
+  border: lightslategrey 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -17,5 +25,8 @@
 }
 
 p {
+  display: flex;
   color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 6vh;
 }
