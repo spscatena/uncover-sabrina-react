@@ -6,6 +6,7 @@ export default class Square extends Component {
     this.state = {
       className: "blackSquare",
       letter: props.letter,
+      onReveal: props.onReveal
     }
   }
 
@@ -13,9 +14,13 @@ export default class Square extends Component {
     this.setState({
       className: "whiteSquare"
     })
+    this.state.onReveal()
   }
 
-
+  isRevealed() {
+    console.log("isRevealed: " + this.state)
+    return this.state.revealed
+  }
 
   render() {
     return (
