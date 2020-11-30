@@ -17,7 +17,6 @@ export default class Square extends Component {
 
 
 
-
   render() {
     return (
       <div
