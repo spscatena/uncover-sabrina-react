@@ -5,7 +5,7 @@
 }
 
 .blackSquare {
-  background-color: red;
+  background-color: black;
 }
 
 
@@ -17,5 +17,5 @@
 }
 
 p {
-  color: white;
+  color: black;
 }
