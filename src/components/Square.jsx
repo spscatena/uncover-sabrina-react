@@ -6,20 +6,19 @@ export default class Square extends Component {
     this.state = {
       className: "blackSquare",
       letter: props.letter,
-      onReveal: props.onReveal
+      incrementRevealCount: props.incrementRevealCount,
+      revealed: false,
     }
   }
 
   onMouseEnter() {
+    if (this.state.letter != "" && !this.state.revealed) {
+      this.state.incrementRevealCount()
+    }
     this.setState({
-      className: "whiteSquare"
+      className: "whiteSquare",
+      revealed: true
     })
-    this.state.onReveal()
-  }
-
-  isRevealed() {
-    console.log("isRevealed: " + this.state)
-    return this.state.revealed
   }
 
   render() {
