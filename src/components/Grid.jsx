@@ -59,10 +59,10 @@ export default class Grid extends Component {
     return (
       <div className="grid-container" >
         <Modal show={this.state.showModalStart} handleClose={this.hideModalStart}>
-          <p>Instructions...</p>
+          <p className="modal-css">Use your mouse to uncover each tile to reavel all the letters in Sabrina's name. Refresh each time for a new board.</p>
         </Modal>
         <Modal show={this.state.showModalWin} handleClose={this.hideModalWin}>
-          <p>You win!</p>
+          <p className="modal-css">Congratulations, you've uncovered every letter in Sabrina's name!</p>
         </Modal>
         {squares}
       </div>)

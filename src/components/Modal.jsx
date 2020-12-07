@@ -4,7 +4,6 @@ import React, { Component } from 'react'
 export default class Modal extends Component {
 
   render() {
-    // return <div>Hello Modal</div>;
 
     const showHideClassName = this.props.show ? "modal display-block" : "modal display-none";
 
